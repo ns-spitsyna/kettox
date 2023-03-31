@@ -1,0 +1,31 @@
+$bp-xs: 320px;
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+$bp-xxl: 1400px;
+
+@mixin breakpoint-min($bp) {
+  @media (min-width: $bp) {
+      @content;
+  }
+}
+
+@mixin breakpoint-max($bp) {
+  @media (max-width: $bp) {
+      @content;
+  }
+}
+
+@mixin breakpoint-min-max($bp1, $bp2) {
+  @media (min-width: $bp1) and (max-width: $bp2) {
+      @content;
+  }
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder { @content; }
+    &:-moz-placeholder           { @content; }
+    &::-moz-placeholder          { @content; }
+    &:-ms-input-placeholder      { @content; }
+  }

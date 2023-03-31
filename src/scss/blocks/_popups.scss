@@ -1,0 +1,191 @@
+/*************** Popup с таймером *******************/
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+
+.popup-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.popup-backdrop.show{
+    background-color: #000;
+    display: block;
+    opacity: .5;
+}
+
+.popup-body {
+    max-width: 1008px;
+    width: 100%;
+    display: flex;
+}
+
+.popup-image ,
+.popup-content {
+    width: 50%;
+}
+
+.popup-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg_main;
+    padding: 135px 48px 48px;
+}
+
+.popup-content {
+    background-color: $white;
+    display: flex;
+    padding: 40px 76px;
+}
+
+.popup-timer {
+    margin-bottom: 25px;
+}
+
+.timer-title {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 22px;
+}
+
+.timer-number-wrap {
+    width: 96px;
+    height: 96px;
+    background: #FFBC53;
+    border-radius: 3px;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #F9F9F9;
+}
+
+.timer-number {
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.timer-delimiter {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #000;
+    padding: 32px 12px;
+}
+
+.popup-text {
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FF003D;
+}
+
+.popup-price {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.popup-discount {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FF003D;
+    margin-bottom: 8px;
+}
+
+.popup-form-text {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #585858;
+}
+
+.button-discount {
+    height: 67px;
+}
+
+
+/************** Popup Random***********************/
+.popup-random {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 412px;
+    min-height: 108px;
+    background: linear-gradient(97.42deg, #E04DED 2.92%, #FB4E9A 100%);
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 32px;
+    z-index: 10;
+}
+
+.popup-random-wrapper {
+    min-height: 108px;
+    padding: 0 64px 0 41px;
+}
+
+.popup-random-close {
+    position: absolute;
+    right: 19px;
+    top: 16px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/popup/icon-close.svg);
+    background-repeat: no-repeat;
+}
+
+.popup-random-icon {
+    width: 56px;
+    height: 56px;
+    margin-right: 16px;
+}
+
+.popup-random-text {
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 130%;
+    color: $white;
+}
+
+.popup-number {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+}

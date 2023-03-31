@@ -1,0 +1,57 @@
+@import 'mixins';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    margin: 0;
+    @include breakpoint-min($bp-lg) {
+        font-size: 38px;
+        line-height: 42px;
+    }
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.title {
+    text-transform: uppercase;
+    margin-top: 0;
+    @include breakpoint-min($bp-lg) {
+        line-height: 47px;
+    }
+}
+
+button {
+    background: none;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+input {
+    outline: none;
+
+    &[type='text'] {
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #A7A7A7;
+    }
+}

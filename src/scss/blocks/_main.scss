@@ -1,0 +1,323 @@
+.main {
+    position: relative;
+    background-color: $bg_light;
+    padding-bottom: 26px;
+    z-index: 1;
+    overflow: hidden;
+    @include breakpoint-min($bp-md) {
+        padding-bottom: 70px;
+    }
+}
+
+.main-title {
+    color: $title-color;
+    margin-top: 28px;
+    margin-bottom: 12px;
+    @include breakpoint-min($bp-lg) {
+        margin-top: 44px;
+        margin-bottom: 24px;
+     }
+}
+
+.main-subtitle {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 75px;
+    @include breakpoint-min($bp-lg) {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 23px;
+    }
+}
+
+.main-list {
+    max-width: 344px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    @include breakpoint-max($bp-md) {
+        max-width: 234px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+.main-list-item {
+    background: url(../images/main/circle-list.png) 0 3px no-repeat;
+    padding-left: 36px;
+    padding-bottom: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    @include breakpoint-min($bp-lg) {
+        font-size: 16px;
+        line-height: 22px;
+        background: none;
+        padding-left: 0;
+    }
+}
+
+.capsule {
+    max-height: 226px;
+}
+
+.capsule-img {
+    max-height: 226px;
+    margin-right: 20px;
+}
+
+.capsules-box {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 45px;
+    height: 230px;
+    @include breakpoint-min($bp-md) {
+        height: 263px;
+        bottom: 16px;
+        margin-bottom: 0;
+
+    }
+    @include breakpoint-min($bp-xl) {
+        height: 255px;
+        right: 23px;
+    }
+    @include breakpoint-min($bp-xxl) {
+        height: auto;
+        right: -25px;
+        bottom: 36px;
+    }
+}
+
+.main-form {
+    margin-top: 26px;
+    @include breakpoint-min($bp-md) {
+        max-width: 384px;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.24);
+        border-radius: 8px;
+        margin-top: 35px;
+    }
+}
+
+.main-form-label {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #131313;
+    margin-bottom: 11px;
+    padding-left: 10px;
+    @include breakpoint-min($bp-md) {
+        margin-bottom: 4px;
+    }
+}
+
+.main-form-text {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    @include breakpoint-min($bp-md) {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+.form-wrapper {
+    padding: 30px 0 38px;
+    @include breakpoint-min($bp-md) {
+        padding: 20px 32px 46px 32px;
+    }
+}
+
+.form-content {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 16px;
+    @include breakpoint-min($bp-md) {
+        color: $text_pink;
+        margin-bottom: 31px;
+    }
+}
+
+.form-price {
+    margin-bottom: 14px;
+    @include breakpoint-min($bp-md) {
+        margin-bottom: 18px;
+    }
+}
+
+.form-phone {
+    margin-bottom: 18px;
+    @include breakpoint-min($bp-md) {
+        margin-bottom: 27px;
+    }
+}
+
+.price-old {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A7A7A7;
+    @include breakpoint-min($bp-md) {
+        font-size: 14px;
+        line-height: 18px;
+        color: #626262;
+    }
+}
+
+.price-new {
+    font-size: 12px;
+    line-height: 16px;
+    color: #585858;
+    @include breakpoint-min($bp-md) {
+        font-size: 14px;
+        line-height: 18px;
+        color: #626262;
+    }
+}
+
+.crossed-out {
+	text-decoration: line-through;
+    font-size: 14px;
+    line-height: 19px;
+    color: #A7A7A7;
+    @include breakpoint-min($bp-md) {
+        font-size: 16px;
+        color: #626262;
+        margin-top: 7px;
+    }
+}
+
+.price-discount {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #DB484B;
+    @include breakpoint-min($bp-md) {
+        font-size: 26px;
+        line-height: 30px;
+        color: $btn_normal;
+    }
+}
+
+.input {
+    width: 100%;
+    height: 32px;
+    background: #F9F9F9;
+    border: 1px solid #E7E7E7;
+    border-radius: 4px;
+    padding: 8px;
+    &:focus {
+        border: 1px solid #a5a4a4;
+        @include placeholder {
+            color: transparent;
+        }
+    }
+    @include breakpoint-min($bp-md) {
+        height: 40px;
+        padding: 10px 15px;
+        border-radius: 3px;
+    }
+}
+
+.quantity {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.button-order {
+    width: 100%;
+    height: 60px;
+    background: #FF6107;
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    @include breakpoint-min($bp-md) {
+        max-width: 320px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+.form-security {
+    background-image: url(../images/main/security.svg);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #C4C4C4;
+    margin-top: 22px;
+
+}
+
+.ellipse-big-sm {
+    position: absolute;
+    left: -150px;
+    top: 263px;
+    z-index: -1;
+    width: 375px;
+}
+.ellipse-small-sm {
+    position: absolute;
+    right: -139px;
+    top: -14px;
+    width: 268px;
+    z-index: -1;
+}
+
+.ellipse-big {
+    @extend .ellipse-big-sm;
+    @include breakpoint-min($bp-lg) {
+        left: -86px;
+        top: -172px;
+        width: 584px;
+    }
+}
+
+.ellipse-small {
+    @extend .ellipse-small-sm;
+    @include breakpoint-min($bp-lg) {
+        width: 410px;
+        left: 641px;
+        top: -168px;
+        right: auto;
+    }
+}
+
+.ellipse-big-bottom {
+    @extend .ellipse-big-sm;
+    @include breakpoint-min($bp-lg) {
+        left: -133px;
+        top: auto;
+        width: 584px;
+        bottom: -70px;
+    }
+}
+
+.ellipse-small-bottom {
+    @extend .ellipse-small-sm;
+    @include breakpoint-min($bp-lg) {
+        width: 410px;
+        right: auto;
+        left: 621px;
+        top: 7px;
+    }
+    @include breakpoint-min($bp-xxl) {
+        left: 651px;
+    }
+}

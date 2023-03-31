@@ -1,0 +1,32 @@
+.header {
+    position: relative;
+    height: 46px;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: $bg_main;
+    z-index: 2;
+    @include breakpoint-min($bp-md) {
+        height: 64px;
+    }
+    &::before {
+        display: none;
+    }
+}
+
+.header-wrapper {
+    height: 64px;
+}
+
+.header-mobile {
+    height: 46px;
+    color: $white;
+}
+
+.bg-green {
+    position: absolute;
+    display: block;
+    height: 89px;
+    width: 237px;
+    left: -38px;
+    z-index: -1;
+}

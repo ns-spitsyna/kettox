@@ -1,0 +1,94 @@
+.ingredients {
+    background-color: $bg_main;
+    padding: 40px 0 44px;
+    @include breakpoint-min($bp-lg) {
+        background-image: url(../images/ingredients/capsule_transform.png);
+        background-position-x: center;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position-y: 48%;
+        padding: 66px 0 56px;
+    }
+    @include breakpoint-min($bp-xl) {
+        background-position-y: 43%;
+    }
+    @include breakpoint-min($bp-xxl) {
+        background-position-y: 45%;
+    }
+}
+.ingredients-title,
+.ingredients-description {
+    color: $white;
+}
+.ingredients-title {
+    text-align: center;
+    margin-bottom: 16px;
+}
+.ingredients-description {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 30px;
+    @include breakpoint-min($bp-md) {
+        text-align: center;
+    }
+    @include breakpoint-min($bp-xxl) {
+        margin-bottom: 40px;
+    }
+}
+
+.box {
+    background-color: $white;
+    border-radius: 63px;
+    height: 196px;
+    margin-bottom: 20px;
+    padding: 24px;
+
+    @include breakpoint-min($bp-md) {
+        max-width: 304px;
+        padding: 30px;
+        margin-bottom: 28px;
+    }
+}
+
+.box-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+.box-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    @include breakpoint-min($bp-sm) {
+        width: 70%;
+    }
+    @include breakpoint-min($bp-md) {
+        width: auto;
+    }
+}
+
+.mr-28 {
+    @include breakpoint-min($bp-md) {
+        margin-right: 28px;
+    }
+}
+
+.ingredients-order-1 {
+    @include breakpoint-max($bp-md) {
+        order: 1;
+    }
+}
+
+.ingredients-order-2 {
+    @include breakpoint-max($bp-md) {
+        order: 3;
+    }
+}
+
+.ingredients-order-3 {
+    @include breakpoint-max($bp-md) {
+        order: 2;
+    }
+}
